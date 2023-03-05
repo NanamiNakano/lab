@@ -72,6 +72,13 @@
   max-width: 30ch;
 }
 
+.ava {
+  width: 3rem!important;
+  height: 3rem!important;
+  margin: 0!important;
+  margin-right: 1em!important;
+  border-radius: 10px;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -105,6 +112,7 @@
 }
 
 .logo,
+.bg,
 .thirteen {
   position: relative;
 }
@@ -258,14 +266,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .nextLogo {
     filter: invert(1);
   }
 
-  .logo,
-  .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
 }
 
 @keyframes rotate {
