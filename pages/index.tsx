@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {Inter} from 'next/font/google'
 import styles from '/styles/Home.module.css'
 import {Footer} from "@/components/Footer";
+import Link from "next/link";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -52,10 +53,9 @@ export default function Home() {
                 </div>
 
                 <div className={styles.grid}>
-                    <a
-                        href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    <Link
+                        href="/todo"
                         className={styles.card}
-                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         <h2 className={inter.className}>
@@ -64,12 +64,11 @@ export default function Home() {
                         <p className={inter.className}>
                             杂物柜
                         </p>
-                    </a>
+                    </Link>
 
-                    <a
-                        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    <Link
+                        href="/todo"
                         className={styles.card}
-                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         <h2 className={inter.className}>
@@ -78,12 +77,11 @@ export default function Home() {
                         <p className={inter.className}>
                             垃圾桶
                         </p>
-                    </a>
+                    </Link>
 
-                    <a
-                        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    <Link
+                        href="/todo"
                         className={styles.card}
-                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         <h2 className={inter.className}>
@@ -92,12 +90,11 @@ export default function Home() {
                         <p className={inter.className}>
                             一点公共服务
                         </p>
-                    </a>
+                    </Link>
 
-                    <a
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    <Link
+                        href="/todo"
                         className={styles.card}
-                        target="_blank"
                         rel="noopener noreferrer"
                     >
                         <h2 className={inter.className}>
@@ -106,7 +103,7 @@ export default function Home() {
                         <p className={inter.className}>
                             有用的链接
                         </p>
-                    </a>
+                    </Link>
                 </div>
             </main>
             <Footer/>
