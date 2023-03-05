@@ -21,23 +21,6 @@ export default function Home() {
                     <p>
                         Nanami の Lab
                     </p>
-                    <div>
-                        <a
-                            href="https://nextjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Powered By{' '}
-                            <Image
-                                src="/next.svg"
-                                alt="Nextjs Logo"
-                                className={styles.nextLogo}
-                                width={100}
-                                height={24}
-                                priority
-                            />
-                        </a>
-                    </div>
                 </div>
 
                 <div className={styles.center}>
@@ -48,7 +31,7 @@ export default function Home() {
                         width="0"
                         height="0"
                         sizes="100vw"
-                        style={{width: '75%', height: 'auto'}}
+                        style={{width: '100%', height: 'auto'}}
                     />
                 </div>
 
